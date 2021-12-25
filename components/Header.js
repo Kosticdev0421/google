@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { useRouter } from "next/router"
 import { useRef } from "react"
+import {XIcon} from '@heroicons/react/solid'
 
 function Header () {
   const router = useRouter();
@@ -14,10 +15,13 @@ function Header () {
     onClick={() => router.push("/")}
     className="cursor-pointer"
     />
-    <form>
+    <form className="flex border border-gray-200 rounded-full shadow-lg max-w-3xl items-center px-6 py-3 ml-10 mr-5">
      <input 
      className="flex-grow w-full focus:otuline-none"
      type="text" ref={searchInputRef} />
+     <XIcon className="h-7 sm:mr-3 text-gray-500 cursor-pointer transition duration-100 transform hover:scale-125"
+     onClick={() => (searchInputRef.current.value="")}
+     />
     </form>
 
     </header>
