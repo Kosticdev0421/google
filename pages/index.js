@@ -28,7 +28,7 @@ export default function Home() {
        </div>
        </header>
 
-       <form className="flex flex-col items-center mt-44 flex-grow w-4/5">
+       <form className="flex flex-col items-center mt-38 flex-grow w-4/5">
        <Image src="https://png2.cleanpng.com/sh/e1ddef276148a39234dd87af84cb8076/L0KzQYm3U8MxN5Nnj5H0aYP2gLBuTfdwd5hxfZ9yLXAwd7F2hBxmNZ10f9G2Z3Byd73sTcViapY1e6kEZUDkQIeCTsc1PWc7TqI8MUW1QoW3VMQ4O2o3SKM3cH7q/kisspng-google-i-o-google-logo-google-5abe0c79e0a069.7456660315224044739201.png"
        height={100}
        width={300}
