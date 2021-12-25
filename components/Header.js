@@ -1,5 +1,6 @@
 import Image from "next/image"
-import { useRouter , useRef } from "next/router"
+import { useRouter } from "next/router"
+import { useRef } from "react"
 
 function Header () {
   const router = useRouter();
