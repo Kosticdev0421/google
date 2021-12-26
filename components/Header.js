@@ -1,6 +1,8 @@
 import Image from "next/image"
 import { useRouter } from "next/router"
 import { useRef } from "react"
+import Avatar from "../components/Avatar"
+import HeaderOptions from "../components/HeaderOptions"
 import {XIcon,MicrophoneIcon,SearchIcon} from '@heroicons/react/solid'
 
 function Header () {
@@ -24,7 +26,7 @@ function Header () {
     onClick={() => router.push("/")}
     className="cursor-pointer"
     />
-    <form className="flex border border-gray-200 rounded-full shadow-lg max-w-3xl items-center px-6 py-3 ml-10 mr-5">
+    <form className="flex flex-grow border border-gray-200 rounded-full shadow-lg max-w-3xl items-center px-6 py-3 ml-10 mr-5">
      <input 
      className="flex-grow w-full focus:outline-none"
      type="text" ref={searchInputRef} />
@@ -39,8 +41,9 @@ function Header () {
       Search
       </button>
     </form>
-
+    <Avatar className="ml-auto" url='https://avatars.githubusercontent.com/u/58090261?s=400&u=57478c3f0a41eccf3e1fcc350116f2f933fbef29&v=4' />
     </div>
+    <HeaderOptions/>
     </header>
   )
 }
